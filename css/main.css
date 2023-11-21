@@ -1,0 +1,239 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+header {
+    margin-top: 90px;
+    background-color: rgb(228, 213, 255);
+    color: rgb(35, 62, 90);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+    margin: 0;
+}
+
+nav {
+    background-color: rgb(200, 187, 224);
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(45, 80, 109);
+    font-weight: bold;
+}
+
+.main-container {
+    background-color: aliceblue;
+    padding: 20px 0;
+}
+
+.main-section {
+    background-color: rgba(236, 204, 255, 0.753);
+    padding: 20px;
+    margin-bottom: 20px;
+    margin: auto;
+    border: 1px solid beige;
+}
+
+.main-section h2 {
+    font-size: 24px;
+
+}
+
+.sidebar {
+    background-color: aliceblue;
+    padding: 20px 0;
+}
+
+.widget {
+    background-color: rgb(240, 215, 255);
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid beige;
+}
+
+.widget h3 {
+    font-size: 20px;
+}
+
+footer {
+    background-color: rgb(200, 187, 224);
+    color: steelblue;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: sienna;
+}
+
+.services-List {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.service {
+    width: calc(33.33%-20px);
+    background-color: rgb(244, 231, 255);
+    border: 1px solid rgb(182, 92, 255);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgb(158, 93, 93);
+    transition: transform 0.2s;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service h3 {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+
+.service p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.field {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 98.5%;
+    padding: 10px;
+    border: 1px solid rgb(199, 115, 255);
+    border-radius: 5px;
+    font-size: 16px;
+}
+input[type="tel"]{
+    width: 18.5%;
+    padding: 7px;
+    border: 1px solid rgb(199, 115, 255);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.Button Button:hover{
+    background-color: rgb(115, 204, 255);
+}
+.Button Button{
+    background-color: rgb(224, 156, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+select{
+    width: 25.5%;
+    padding: 7px;
+    text-align: center;
+    border: 1px solid rgb(199, 115, 255);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+select:focus {
+    outline: none;
+    box-shadow: 0 0 5px #9e0090;
+}
+
+select:hover {
+    border: 2px solid hsl(284, 68%, 60%);
+    border-radius: 3px;
+}
+
+select option {
+    background-color: #ffd6f4;
+    color: #2d0e0e;
+    cursor: pointer;
+   
+}
+
+select:hover {
+    background-color: #ffabf2; 
+    color: #3f2424; 
+}
+
+
+select option:checked {
+    background-color: #ae407f; 
+    border-color: #9e0090;
+}
+
+select::-webkit-scrollbar {
+    width: 15px;
+}
+
+select::-webkit-scrollbar-track {
+    background: #ff86e7;
+}
+
+select::-webkit-scrollbar-thumb {
+    background: #ad5099;
+}
+input[type="date"] {
+    width: 18.5%;
+    padding: 7px;
+    text-align: center;
+    border: 1px solid rgb(199, 115, 255);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+

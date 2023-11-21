@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
+    <script src='../js/main.js'></script>
+</head>
+<body>
+    <div id="home" class="main-content">
+        <div class="container">
+            <section class="main-section">
+                <form action="show.php" method="post">
+                    <div class="field">
+                        <label for="">Text:</label>
+                        <input placeholder="Write your name" type="text" name="text" id="text">
+                    </div>                    
+                    <div class="field">
+                        <label for="number">Number: </label>
+                        <input 
+                            placeholder="Your Age" 
+                            type="number" 
+                            name="number" 
+                            id="number"
+                            min="0"
+                            max="10"
+                            step="3"
+                            value="2"
+                        >
+                    </div>                    
+                    <div class="field">
+                        <label for="checkbox">Mascota favorita: </label>
+                        <label for="m1">Perros </label>
+                        <input type="checkbox" name="checkbox" id="m1" value="Perros ">
+                        <label for="m2">Gatos </label>
+                        <input type="checkbox" name="checkbox" id="m2" value="Gatos ">
+                        <label for="m3">Cuyes </label>
+                        <input type="checkbox" name="checkbox" id="m3" value="Cuyes ">
+                        <label for="m4">Conejos</label>
+                        <input type="checkbox" name="checkbox" id="m4" value="Conejos">
+                    </div>                    
+                    <div class="field">
+                        <label for="radio">Radio: </label>
+                        <label for="radio_1">option 1 </label>
+                        <input type="radio" name="radio" id="radio_1" value="A">                        
+                        <label for="radio_2">Option 2 </label>
+                        <input type="radio" name="radio" id="radio_2" value="B">                        
+                        <label for="radio">Question 2: </label>
+                        <label for="radio_3">Option 3 </label>
+                        <input type="radio" name="radio_1" id="radio_3" value="C">
+                        <label for="radio_4">Option 4 </label>
+                        <input type="radio" name="radio_1" id="radio_4" value="D">
+                    </div>
+                    <div class="field">
+                        <label for="born_date">Born date:</label>
+                        <input 
+                            type="date" 
+                            name="born_date" 
+                            id="born_date"
+                            min="2000-01-01"
+                            max="2023-08-01"
+                        >
+                    </div> 
+                    <div class="field">
+                        <label for="myFile">My File:</label>
+                        <input type="file" name="myFile" id="myFile">
+                    </div>
+                    <div class="field">
+                        <label for="hide">Hide field:</label>
+                        <input 
+                        type="hidden" 
+                        name="hide" 
+                        id="hide" 
+                        value="data_hide">
+                    </div>
+                    <div class="field">
+                        <label for="country">Country:</label>
+                        <select name="country" id="country">
+                            <option value="Colombia">Colombia</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Panamá">Panamá</option>
+                            <option value="Perú">Perú</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="description">Description:</label>
+                        <textarea 
+                            maxlength="100" 
+                            name="desc" 
+                            id="desc" 
+                            cols="30" 
+                            rows="10">
+                        </textarea>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </form>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

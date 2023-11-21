@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
+    <script src='../js/main.js'></script>
+</head>
+
+<body>
+    <div id="home" class="main-content">
+        <div class="container">
+            <section class="main-section">
+                <form action="show.php" method="post">
+                    <div class="field">
+                        <label for="name">Nombre:</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+
+                    <br>
+
+                    <div class="field">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="text" name="email" id="email" required>
+                    </div>
+
+                    <br>
+
+                    <div class="field">
+                        <label for="phone">Teléfono:</label>
+                        <input type="tel" name="phone" id="phone" required>
+                    </div>
+
+                    <br>
+
+                    <div class="field">
+                        <label for="country">País:</label>
+                        <select name="country" id="country" required>
+                            <option value="">Seleccione su país</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Panamá">Panamá</option>
+                            <option value="Perú">Perú</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <br>
+
+                    <div class="field">
+                        <label for="departamento">Departamento:</label>
+                        <select name="departamento" id="departamento">
+                            <option value="Seleccione su departamento">Seleccione su departamento</option>
+                            <option value="Amazonas">Amazonas</option>
+                            <option value="Antioquia">Antioquia</option>
+                            <option value="Arauca">Arauca</option>
+                            <option value="Atlántico">Atlántico</option>
+                            <option value="Bolívar">Bolívar</option>
+                            <option value="Boyacá">Boyacá</option>
+                            <option value="Caldas">Caldas</option>
+                            <option value="Caquetá">Caquetá</option>
+                            <option value="Casanare">Casanare</option>
+                            <option value="Cauca">Cauca</option>
+                            <option value="Cesar">Cesar</option>
+                            <option value="Chocó">Chocó</option>
+                            <option value="Córdoba">Córdoba</option>
+                            <option value="Cundinamarca">Cundinamarca</option>
+                            <option value="Guainía">Guainía</option>
+                            <option value="Guaviare">Guaviare</option>
+                            <option value="Huila">Huila</option>
+                            <option value="La Guajira">La Guajira</option>
+                            <option value="Magdalena">Magdalena</option>
+                            <option value="Meta">Meta</option>
+                            <option value="Nariño">Nariño</option>
+                            <option value="Norte de Santander">Norte de Santander</option>
+                            <option value="Putumayo">Putumayo</option>
+                            <option value="Quindío">Quindío</option>
+                            <option value="Risaralda">Risaralda</option>
+                            <option value="San Andrés y Providencia">San Andrés y Providencia</option>
+                            <option value="Santander">Santander</option>
+                            <option value="Sucre">Sucre</option>
+                            <option value="Tolima">Tolima</option>
+                            <option value="Valle del Cauca">Valle del Cauca</option>
+                            <option value="Vaupés">Vaupés</option>
+                            <option value="Vichada">Vichada</option>
+                        </select>
+                    </div>
+
+                    <br>
+
+                    <div class="field">
+                        <label for="c_p">Preferencias de contacto:</label>
+                        <input type="checkbox" value="ce" name="c_p[]" id="c_p_1">
+                        Correo elctrónico
+                        <input type="checkbox" value="cel" name="c_p[]" id="c_p_2">
+                        Celular
+                        <input type="checkbox" value="sms" name="c_p[]" id="c_p_3">
+                        SMS
+                    </div>
+
+                    <br>
+
+                    <div class="field">
+                        <label for="gender">Genero biológico:</label>
+                        <input type="radio" value="M" name="gender" id="gender_1" required>
+                        Masculino
+                        <input type="radio" value="F" name="gender" id="gender_2" required>
+                        Femenino
+                        <input type="radio" value="O" name="gender" id="gender_3" required>
+                        Otro
+                    </div>
+
+                    <br>
+
+                    
+                    
+                    
+                    <div class="field">
+                        <label for="tipo_sangre">Tipo de sangre (RH):</label>
+                        <input type="radio" name="tipo_sangre" value="A+">A+
+                        <input type="radio" name="tipo_sangre" value="A-">A-
+                        <input type="radio" name="tipo_sangre" value="B+">B+
+                        <input type="radio" name="tipo_sangre" value="B-">B-
+                        <input type="radio" name="tipo_sangre" value="AB+">AB+
+                        <input type="radio" name="tipo_sangre" value="AB-">AB-
+                        <input type="radio" name="tipo_sangre" value="O+">O+
+                        <input type="radio" name="tipo_sangre" value="O-">O-
+                    </div>
+                    
+                    
+                    <div class="field">
+                        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                        <input type="date" name="fecha_nacimiento" min="1900-12-31" max="2005-10-16" required>
+                        <p>-- Debe ser mayor de edad para registrarse. --</p>
+                    </div>
+                    
+                    <br>
+
+                    <div class="field">
+                        <label for="p_m">Mensaje de presentación:</label>
+                        <textarea name="p_m" id="p_m" rows="3"></textarea>
+                    </div>
+                    
+                    
+                    <div class="Button">
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <script src='js/data.js'></script>
+    <script src='js/Person.js'></script>
+    <script src='js/main.js'></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About...</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <h1>My site</h1>
+            <p> Welcome to my site</p>
+        </div>
+    </header>
+    <div id="home" class="main-content">
+        <div class="container">
+            <section class="main-section">
+                <h2>Section 1</h2>
+                <p>Here goes the section 1 content.</p>
+            </section>
+            <section class="main-section">
+                <h2>Section 2</h2>
+                <p>Here goes the section 2 content.</p>
+            </section>
+        </div>
+    </div>
+    <div id="about" class="main-content">
+        <div class="container">
+            <section class="main-section">
+                <h2>About us...</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis veritatis quod nihil saepe, reiciendis
+                    iure ipsum iusto nulla in fugiat officia inventore eaque quas qui neque error minima quasi ducimus.
+                </p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae velit tempora dolore omnis
+                    necessitatibus, molestias excepturi voluptatum ea quam obcaecati minima exercitationem quod suscipit
+                    eligendi, voluptates ipsa deleniti. Explicabo, dolor.</p>
+            </section>
+        </div>
+    </div>
+    <div id="services" class="main-content">
+        <div class="container">
+            <section class="main-section">
+                <h2>Our services</h2>
+                <ul class="services-list">
+                    <li class="service">
+                        <h3>Service 1</h3>
+                        <p>Description service 1</p>
+                    </li>
+                    <li class="service">
+                        <h3>Service 2</h3>
+                        <p>Description service 2</p>
+                    </li>
+                    <li class="service">
+                        <h3>Service 3</h3>
+                        <p>Description service 3</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <div id="contact" class="main-content">
+        <div class="container">
+            <section class="main-section">
+                <form method="post" action="pages/show.php">
+                    <div class="field">
+                        <label for="name-1">Name: </label>
+                        <input type="text" name="name" id="name-1" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="message">Message: </label>
+                        <textarea name="message" id="message" rows="10" required>
+                            </textarea>
+                    </div>
+                    <div class="Button">
+                        <button type="submit">Send</button>
+                    </div>
+
+                </form>
+            </section>
+        </div>
+    </div>
+    <aside class="sidebar">
+        <div class="container">
+            <div class="widget">
+                <h3>Usefull resources</h3>
+                <ul>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Notices</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </div>
+            <div class="widget">
+                <h3>Anouncements</h3>
+                <p>Come to get our offerts in sale.</p>
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <div class="container">
+            <p>
+                &copy; 2023 My site<br>UNICESMAG
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

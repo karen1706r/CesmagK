@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
+    <script src='../js/main.js'></script>
+</head>
+
+<body>
+    <div id="home" class="main-content">
+        <div class="container">
+            <section class="main-section">
+                <form action="show.php" method="post">
+                    <!--value: Define el valor de un campo-->
+                    <div class="field">
+                        <label for="">Value:</label>
+                        <input type="text" name="text" id="text" value="Default value">
+                    </div>
+                    <!--placeholder: muestra ejemplos del formato de entrada-->
+                    <div class="field">
+                        <label for="">Placeholder:</label>
+                        <input placeholder="Write your name" type="text" name="text" id="text">
+                    </div>
+                    <!--required: indica que el campo es obligatorio-->
+                    <div class="field">
+                        <label for="">Required:</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <!--disable: deshabilita un campo-->
+                    <div class="field">
+                        <label for="">Disabled:</label>
+                        <input  type="text" name="text" id="text"
+                        value="Text in disabled field" disabled>
+                    </div>
+                    <!--readonly: campo de solo lectura-->
+                    <div class="field">
+                        <label for="">Readonly:</label>
+                        <input type="text" name="text" id="text"
+                        value="Text in readonly field" readonly >
+                    </div>
+                    <!--maxlength: Cantidad de caracteres máxima (Texto)-->
+                    <div class="field">
+                        <label for="">Maxlength:</label>
+                        <input type="text" name="text" id="text"
+                        maxlength="5">
+                    </div>
+                    <!--max, min, step: Control en campos numéricos-->
+                    <div class="field">
+                        <label for="">Max, min, step:</label>
+                        <input type="number" name="text" id="text"
+                        max="10" min="1" step="2">
+                    </div>
+                    <!--pattern: utiliza expresiones regulares-->                    
+                    <!--Seimpre buscar la RE con el lenguaje-->
+                    <div class="field">
+                        <label for="">Pattern:</label>
+                        <input type="text" name="text" id="text"
+                        pattern="[A-Z][a-z]+( [A-Z][a-z]+)*">
+                    </div>
+                    <!--Select: DropDowList -->
+                    <!--size: Número de filas visibles-->
+                    <!--multiple: para seleccionar mas de una opción-->
+                    <div class="field">
+                        <label for="">Text:</label>
+                        <select multiple onchange="selectChanged()" 
+                        size="2" name="country" id="country" >
+                            <option value="Colombia">Colombia</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Panamá">Panamá</option>
+                            <option value="Perú">Perú</option>
+                        </select>
+                    </div>
+                    
+                    <div class="field">
+                        <button type="submit">Send</button>
+                        </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </form>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
